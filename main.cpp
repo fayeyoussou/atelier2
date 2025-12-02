@@ -4,12 +4,17 @@
 
 
 #include <iostream>
-
+int somme(const int* t, int n){
+   if (!t) return 0;
+   int sum = 0;
+   const int *end = t + n;
+   for (auto i = t; i != end;i++) {
+      sum += (*t);
+   }
+   return sum;
+}
 int main() {
-    int pile = 98;
-    int t[3] = {1, 2, 3};
-    int *fin = t + 3; // one-past-end
-    for (int *p = t; p != fin; ++p) {
-        std::cout << *p;
-    }
+   std:std::unique_ptr<int> notes = std::make_unique<int>(0);
+   std::cout << *notes << std::endl;
+
 }
