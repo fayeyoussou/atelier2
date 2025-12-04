@@ -1,5 +1,5 @@
 //
-// Created by youssoupha faye on 02/12/2025.
+// Created by Youssoupha FAYE on 02/12/2025.
 //
 
 
@@ -14,7 +14,6 @@ int somme(const int* t, int n){
    return sum;
 }
 int main() {
-   std:std::unique_ptr<int> notes = std::make_unique<int>(0);
-   std::cout << *notes << std::endl;
-
+   const auto notes = std::make_unique<int>(0);
+   std::cout << notes.get() << std::endl;
 }
