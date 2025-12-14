@@ -23,7 +23,6 @@ int main() {
     for (int i = 0; i < notes.size(); ++i) {
         std::cout << "notes[" << i << "] = " << notes[i] << "\n";
     }
-    notes.at(100);
     std::cout << "\n--- Affichage 2 : boucle for (range-based) ---\n";
     for (int valeur : notes) {           // copie de chaque élément
         std::cout << valeur << " ";
@@ -31,8 +30,8 @@ int main() {
     std::cout << "\n";
 
     std::cout << "\n--- Affichage 3 : avec iterateurs ---\n";
-    for (auto it = notes.end() - 1; it != notes.begin(); --it) {
-        std::cout << *it << " ";
+    for (auto i = notes.begin() ; i != notes.end(); ++i) {
+        std::cout << *i << " ";
     }
     std::cout << "\n";
 
@@ -55,7 +54,7 @@ int main() {
     std::cout << "\n--- Ajout d'une note à la fin (push_back) ---\n";
     std::cout << "Ajout de la note 20.\n";
     notes.push_back(20);
-
+    notes[3]=20;
     std::cout << "Nouveau contenu : ";
     for (int v : notes) {
         std::cout << v << " ";

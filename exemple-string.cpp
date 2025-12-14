@@ -1,7 +1,7 @@
 #include <iostream>
 
 int main() {
-    char s[6] = { 'H', 'e', 'l', 'l', 'o', '\0'};
+    char s[] = "Youssoupha";
 
     char suite[6] = { ' ', '+', '+', '+', '+', '\0' };
     std::string nouveauText = "Hello World";

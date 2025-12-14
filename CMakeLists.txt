@@ -8,4 +8,5 @@ add_executable(untitled1 exemple-string.cpp
         std_vector.cpp
         unique_ptr.cpp
         main.cpp
+        test.c
 )

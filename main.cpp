@@ -1,19 +1,9 @@
 //
 // Created by Youssoupha FAYE on 02/12/2025.
 //
-
-
 #include <iostream>
-int somme(const int* t, int n){
-   if (!t) return 0;
-   int sum = 0;
-   const int *end = t + n;
-   for (auto i = t; i != end;i++) {
-      sum += (*t);
-   }
-   return sum;
-}
+void etalonner(double* ruban, double correction);
 int main() {
-   const auto notes = std::make_unique<int>(0);
-   std::cout << notes.get() << std::endl;
+   double ruban = 12.3;
+   etalonner(&ruban,.5); // 12.8
 }
